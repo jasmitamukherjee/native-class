@@ -1,6 +1,6 @@
 
 import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
 
    
   ])
-  function increament(){
+  const increament=()=>{
     setCounter(counter+1)
   }
   function decreament(){
@@ -40,10 +40,13 @@ export default function App() {
   function handleclick(){
     alert("hey")
   }
-  function multiplier(){
-    setmulti(multi=>multi+5)
+  const multiplier=()=>{
+    setmulti(multi+5)
     setnum(num+1)
+    
   }
+  
+  
   return (
     <ScrollView>
     <View style={styles.container}>
