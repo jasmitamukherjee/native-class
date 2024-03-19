@@ -4,6 +4,7 @@ import { useState ,useEffect} from 'react';
 import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  
   const [counter,setCounter] = useState(0)
   const [multi, setmulti] = useState(0)
   const [num, setnum] = useState(0)
